@@ -29,11 +29,11 @@ const Navbar = () => {
   return (
     <header className={cn(
       'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-      scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm' : 'bg-transparent'
+      scrolled ? 'bg-background/90 backdrop-blur-md shadow-md' : 'bg-transparent'
     )}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <Link to="/" className="font-serif text-2xl font-bold text-portfolio-navy">
+          <Link to="/" className="font-serif text-2xl font-bold text-primary">
             Portfolio
           </Link>
           
@@ -48,7 +48,7 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <Button className="bg-primary hover:bg-primary/90">
+            <Button className="bg-accent hover:bg-accent/90">
               Get In Touch
             </Button>
           </nav>
@@ -66,7 +66,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-lg absolute top-16 left-0 w-full animate-fade-in">
+        <div className="md:hidden bg-background shadow-lg absolute top-16 left-0 w-full animate-fade-in">
           <nav className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             {navLinks.map((link) => (
               <Link 
@@ -78,7 +78,7 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <Button className="bg-primary hover:bg-primary/90 w-full">
+            <Button className="bg-accent hover:bg-accent/90 w-full">
               Get In Touch
             </Button>
           </nav>

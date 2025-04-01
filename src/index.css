@@ -7,39 +7,7 @@
 
 @layer base {
   :root {
-    --background: 210 20% 98%;
-    --foreground: 215 25% 27%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 215 25% 27%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 27%;
-
-    --primary: 200 98% 39%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 14 100% 53%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215 16% 47%;
-
-    --accent: 160 64% 32%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 200 98% 39%;
-
-    --radius: 0.5rem;
-  }
-
-  .dark {
-    --background: 260 50% 10%;
+    --background: 222 47% 11%;
     --foreground: 213 31% 91%;
 
     --card: 222 47% 11%;
@@ -66,6 +34,8 @@
     --border: 217 33% 17%;
     --input: 217 33% 17%;
     --ring: 212 36% 89%;
+
+    --radius: 0.5rem;
   }
 
   * {
@@ -110,12 +80,12 @@
     animation-delay: 600ms;
   }
   
-  .bg-gradient {
-    @apply bg-gradient-to-br from-[#E5DEFF] to-[#D3E4FD];
+  .bg-deep-blue {
+    @apply bg-[#0a192f];
   }
-  
-  .dark .bg-gradient {
-    @apply bg-gradient-to-br from-[#1A0732] to-[#0D1B2A];
+
+  .lightning-cursor {
+    cursor: none;
   }
 }
 
