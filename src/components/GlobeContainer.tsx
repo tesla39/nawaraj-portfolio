@@ -9,9 +9,11 @@ export function GlobeContainer() {
   const { theme } = useTheme();
   
   return (
-    <div className="relative bg-white dark:bg-slate-900 rounded-2xl shadow-xl overflow-hidden aspect-square max-w-md mx-auto lg:ml-auto">
-      <div className={`absolute inset-0 ${theme === 'dark' ? 'bg-gradient-to-br from-primary/10 to-secondary/10' : 'bg-gradient-to-br from-primary/30 to-secondary/30'} opacity-50`}></div>
-      <div className="relative p-2 flex items-center justify-center h-full">
+    <div className="relative h-full w-full aspect-square max-w-md mx-auto lg:ml-auto">
+      <div className="absolute inset-0 z-0">
+        {/* Removed the background container entirely */}
+      </div>
+      <div className="relative h-full w-full">
         <Canvas camera={{ position: [0, 0, 4], fov: 60 }}>
           <ambientLight intensity={0.5} />
           <Suspense fallback={null}>

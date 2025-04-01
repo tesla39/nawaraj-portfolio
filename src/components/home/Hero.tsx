@@ -34,14 +34,13 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="relative animate-fade-in-right">
+          <div className="relative w-full h-[400px] md:h-[500px] animate-fade-in-right">
             <GlobeContainer />
-            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-accent rounded-lg animate-float animation-delay-600"></div>
           </div>
         </div>
       </div>
     </section>
   );
-};
+}
 
 export default Hero;
