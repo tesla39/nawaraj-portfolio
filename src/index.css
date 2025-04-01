@@ -39,7 +39,7 @@
   }
 
   .dark {
-    --background: 222 47% 11%;
+    --background: 260 50% 10%;
     --foreground: 213 31% 91%;
 
     --card: 222 47% 11%;
@@ -115,7 +115,7 @@
   }
   
   .dark .bg-gradient {
-    @apply bg-gradient-to-br from-slate-900 to-slate-800;
+    @apply bg-gradient-to-br from-[#1A0732] to-[#0D1B2A];
   }
 }
 

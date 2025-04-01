@@ -2,6 +2,7 @@
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { GlobeContainer } from '@/components/GlobeContainer';
 
 const Hero = () => {
   return (
@@ -34,15 +35,7 @@ const Hero = () => {
           </div>
           
           <div className="relative animate-fade-in-right">
-            <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden aspect-square max-w-md mx-auto lg:ml-auto">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/30 opacity-50"></div>
-              <div className="relative p-6 flex items-center justify-center h-full">
-                <div className="p-8 bg-white/90 backdrop-blur-sm rounded-xl shadow-lg animate-float">
-                  <h3 className="font-serif text-2xl font-bold text-portfolio-navy mb-4">Creative Developer</h3>
-                  <p className="text-muted-foreground">Turning ideas into digital reality through code and design.</p>
-                </div>
-              </div>
-            </div>
+            <GlobeContainer />
             <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-accent rounded-lg animate-float animation-delay-600"></div>
           </div>
         </div>
