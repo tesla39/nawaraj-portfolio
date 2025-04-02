@@ -16,6 +16,7 @@ export const LightningCursor: React.FC = () => {
     let prevMouseX = 0;
     let prevMouseY = 0;
     let cursorVisible = true;
+    let trailPoints: {x: number, y: number}[] = [];
     
     // Set canvas to fullscreen
     const setCanvasSize = () => {
@@ -33,11 +34,20 @@ export const LightningCursor: React.FC = () => {
       mouseX = e.clientX;
       mouseY = e.clientY;
       cursorVisible = true;
+      
+      // Add current point to trail
+      trailPoints.push({x: mouseX, y: mouseY});
+      
+      // Limit trail length
+      if (trailPoints.length > 20) {
+        trailPoints.shift();
+      }
     };
     
     // Hide cursor when mouse leaves window
     const onMouseLeave = () => {
       cursorVisible = false;
+      trailPoints = [];
     };
     
     window.addEventListener('mousemove', onMouseMove);
@@ -47,55 +57,49 @@ export const LightningCursor: React.FC = () => {
     const drawLightning = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       
-      if (!cursorVisible) return;
+      if (!cursorVisible || trailPoints.length < 2) return;
       
       // Main cursor circle
       ctx.beginPath();
-      ctx.arc(mouseX, mouseY, 10, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(64, 195, 247, 0.8)';
+      ctx.arc(mouseX, mouseY, 8, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(100, 255, 218, 0.8)'; // Brittany Chiang's accent color
       ctx.fill();
       
       // Outer glow
       ctx.beginPath();
-      ctx.arc(mouseX, mouseY, 20, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(64, 195, 247, 0.2)';
+      ctx.arc(mouseX, mouseY, 16, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(100, 255, 218, 0.3)';
       ctx.fill();
       
-      // Lightning trail
-      if (prevMouseX && prevMouseY) {
-        // Calculate distance for lightning detail
-        const distance = Math.sqrt(Math.pow(mouseX - prevMouseX, 2) + Math.pow(mouseY - prevMouseY, 2));
+      // Draw lightning trail with fading effect
+      for (let i = 0; i < trailPoints.length - 1; i++) {
+        const point = trailPoints[i];
+        const nextPoint = trailPoints[i + 1];
         
-        if (distance > 5) {
-          ctx.beginPath();
-          ctx.moveTo(mouseX, mouseY);
-          
-          // Create jagged lightning effect
-          const segments = Math.floor(distance / 10);
-          let lastX = mouseX;
-          let lastY = mouseY;
-          
-          for (let i = 0; i < segments; i++) {
-            const ratio = i / segments;
-            const posX = prevMouseX + (mouseX - prevMouseX) * ratio;
-            const posY = prevMouseY + (mouseY - prevMouseY) * ratio;
-            
-            // Add randomness for lightning effect
-            const jitter = 15 * Math.sin(i);
-            const angle = Math.atan2(mouseY - prevMouseY, mouseX - prevMouseX) + Math.PI/2;
-            const offsetX = Math.cos(angle) * jitter;
-            const offsetY = Math.sin(angle) * jitter;
-            
-            ctx.lineTo(posX + offsetX, posY + offsetY);
-            lastX = posX;
-            lastY = posY;
-          }
-          
-          ctx.lineTo(prevMouseX, prevMouseY);
-          ctx.strokeStyle = 'rgba(64, 195, 247, 0.7)';
-          ctx.lineWidth = 2;
-          ctx.stroke();
-        }
+        // Calculate opacity based on position in trail
+        const opacity = (i / trailPoints.length) * 0.8;
+        
+        // Create jagged lightning effect
+        ctx.beginPath();
+        
+        // Starting point
+        ctx.moveTo(point.x, point.y);
+        
+        // Add randomness to mid-points for lightning effect
+        const midX = (point.x + nextPoint.x) / 2;
+        const midY = (point.y + nextPoint.y) / 2;
+        const jitterAmount = 10 * (1 - i / trailPoints.length);
+        const jitterX = midX + (Math.random() - 0.5) * jitterAmount;
+        const jitterY = midY + (Math.random() - 0.5) * jitterAmount;
+        
+        // Draw the jagged line
+        ctx.lineTo(jitterX, jitterY);
+        ctx.lineTo(nextPoint.x, nextPoint.y);
+        
+        // Style
+        ctx.strokeStyle = `rgba(100, 255, 218, ${opacity})`;
+        ctx.lineWidth = 2;
+        ctx.stroke();
       }
     };
     
@@ -119,7 +123,7 @@ export const LightningCursor: React.FC = () => {
     <canvas 
       ref={canvasRef} 
       className="fixed inset-0 pointer-events-none z-50"
-      style={{ opacity: 0.8 }}
+      style={{ opacity: 0.9 }}
     />
   );
 };

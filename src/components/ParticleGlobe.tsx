@@ -23,8 +23,8 @@ const generateParticles = (count: number, radius: number) => {
 
 export function ParticleGlobe() {
   const pointsRef = useRef<THREE.Points>(null);
-  const particleCount = 2500; // Increased particle count
-  const radius = 1.8; // Slightly larger radius
+  const particleCount = 3000; // Increased particle count for more detail
+  const radius = 1.8; // Maintain the same radius
   
   // Generate sphere points
   const positions = generateParticles(particleCount, radius);
@@ -34,6 +34,14 @@ export function ParticleGlobe() {
     if (pointsRef.current) {
       pointsRef.current.rotation.y += 0.001;
       pointsRef.current.rotation.x += 0.0005;
+      
+      // Add subtle breathing effect
+      const time = state.clock.getElapsedTime();
+      pointsRef.current.scale.set(
+        1 + Math.sin(time) * 0.01,
+        1 + Math.sin(time) * 0.01,
+        1 + Math.sin(time) * 0.01
+      );
     }
   });
 
@@ -46,12 +54,13 @@ export function ParticleGlobe() {
     >
       <PointMaterial
         transparent
-        color='#4FC3F7'
-        size={0.045} // Slightly smaller particles
+        color='#64ffda' // Brittany Chiang's accent color
+        size={0.035} // Smaller particles for sharper look
         sizeAttenuation={true}
         depthWrite={false}
         blending={THREE.AdditiveBlending}
-        opacity={0.8} // Reduced opacity to blend better
+        opacity={0.8}
+        toneMapped={false} // Makes colors pop more
       />
     </Points>
   );
