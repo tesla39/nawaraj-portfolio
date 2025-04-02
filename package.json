@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "preinstall": "npm install react@19 react-dom@19 --force"
     "build": "npm install --legacy-peer-deps && vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
