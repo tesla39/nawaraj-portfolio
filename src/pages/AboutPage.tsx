@@ -1,4 +1,5 @@
-import Navbar from '@/components/Navbar';
+
+import React from 'react';
 import Footer from '@/components/Footer';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -33,9 +34,8 @@ const AboutPage = () => {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen bg-deep-blue">
-      <Navbar />
-      <main className="flex-grow pt-20">
+    <div className="flex flex-col min-h-screen bg-deep-blue scroll-smooth">
+      <main className="flex-grow">
         <section className="py-16 md:py-24 bg-background/30">
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-4xl mx-auto">
