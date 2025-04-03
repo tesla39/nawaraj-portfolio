@@ -62,7 +62,7 @@ export const LightningCursor: React.FC = () => {
       // Main cursor circle
       ctx.beginPath();
       ctx.arc(mouseX, mouseY, 8, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(100, 255, 218, 0.8)'; // Brittany Chiang's accent color
+      ctx.fillStyle = 'rgba(100, 255, 218, 0.8)';
       ctx.fill();
       
       // Outer glow
