@@ -26,10 +26,10 @@ const Navbar = () => {
     { name: 'Contact', path: '/contact' },
   ];
 
-  // The Navbar is now set to "hidden" visibility to remove it from the display
+  // Removed the 'hidden' class to show the navigation
   return (
     <header className={cn(
-      'fixed top-0 left-0 right-0 z-50 transition-all duration-300 hidden', // Added 'hidden' class
+      'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
       scrolled ? 'bg-[#0a192f]/90 backdrop-blur-md shadow-md' : 'bg-transparent'
     )}>
       <div className="container mx-auto px-4 md:px-6">
