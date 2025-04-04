@@ -44,10 +44,10 @@ const Contact = () => {
       setIsSubmitting(false);
     }, 1500);
   };
-  return <section id="contact" className="section-padding bg-gradient-to-b from-white to-muted/30">
+  return <section id="contact" className="section-padding bg-gradient-to-b from-white to-muted/30 bg-gray-800 py-px my-0">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4 text-gray-950">
             Let's Work Together
           </h2>
           <p className="max-w-2xl mx-auto text-xl font-semibold text-indigo-800">
@@ -56,7 +56,7 @@ const Contact = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-white p-6 rounded-xl shadow-md flex flex-col items-center text-center">
+          <div className="p-6 rounded-xl shadow-md flex flex-col items-center text-center bg-gray-800">
             <div className="w-12 h-12 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-4">
               <Mail size={20} />
             </div>
@@ -64,7 +64,7 @@ const Contact = () => {
             <p className="text-muted-foreground">codenawaraj@gmail.com</p>
           </div>
           
-          <div className="bg-white p-6 rounded-xl shadow-md flex flex-col items-center text-center">
+          <div className="p-6 rounded-xl shadow-md flex flex-col items-center text-center bg-gray-800">
             <div className="w-12 h-12 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-4">
               <Phone size={20} />
             </div>
@@ -72,7 +72,7 @@ const Contact = () => {
             <p className="text-muted-foreground">+919818540415 (WhatsApp)</p>
           </div>
           
-          <div className="bg-white p-6 rounded-xl shadow-md flex flex-col items-center text-center">
+          <div className="p-6 rounded-xl shadow-md flex flex-col items-center text-center bg-gray-800">
             <div className="w-12 h-12 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-4">
               <MapPin size={20} />
             </div>
@@ -104,7 +104,7 @@ const Contact = () => {
               </div>
             </div>
             
-            <form onSubmit={handleSubmit} className="p-8">
+            <form onSubmit={handleSubmit} className="p-8 bg-gray-700">
               <div className="space-y-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-1">
