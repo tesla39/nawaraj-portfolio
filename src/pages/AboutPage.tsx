@@ -1,9 +1,10 @@
-
-import React from 'react';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const AboutPage = () => {
   const skills = [
@@ -35,6 +36,7 @@ const AboutPage = () => {
 
   return (
     <div className="flex flex-col min-h-screen bg-deep-blue scroll-smooth">
+      <Navbar />
       <main className="flex-grow">
         <section className="py-16 md:py-24 bg-background/30">
           <div className="container mx-auto px-4 md:px-6">
