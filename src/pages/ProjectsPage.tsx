@@ -16,11 +16,11 @@ type Project = {
 };
 const projects: Project[] = [{
   id: 1,
-  title: "Digital Agency Website",
-  description: "A modern website for a digital marketing agency with interactive elements and smooth animations. Built with React and Tailwind CSS.",
+  title: "Digital Menu",
+  description: "A QR- based digital menu system to create beautiful & contactless menus with QR codes that enhance customer experience and simplify ordering at your restaurant.",
   imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
   category: ["Web Design", "Frontend"],
-  link: "/projects/1",
+  link: "https://astramind.netlify.app/",
   featured: true
 }, {
   id: 2,
@@ -30,36 +30,38 @@ const projects: Project[] = [{
   category: ["Web App", "E-commerce"],
   link: "/projects/2",
   featured: true
-}, {
-  id: 3,
-  title: "Mobile Banking App",
-  description: "A user-friendly mobile banking application with advanced security features and intuitive UX. Designed in Figma and developed for iOS and Android.",
-  imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-  category: ["UI/UX", "Mobile"],
-  link: "/projects/3",
-  featured: true
-}, {
-  id: 4,
-  title: "Health & Fitness Dashboard",
-  description: "A comprehensive dashboard for tracking fitness goals, nutrition, and overall health metrics with data visualization.",
-  imageUrl: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-  category: ["Web App", "Dashboard"],
-  link: "/projects/4"
-}, {
-  id: 5,
-  title: "Creative Agency Portfolio",
-  description: "A vibrant and interactive portfolio website for a creative agency, featuring case studies and team profiles.",
-  imageUrl: "https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-  category: ["Web Design", "Portfolio"],
-  link: "/projects/5"
-}, {
-  id: 6,
-  title: "Real Estate Listing Platform",
-  description: "A property listing website with advanced search features, virtual tours, and agent profiles for a premium real estate company.",
-  imageUrl: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-  category: ["Web App", "Real Estate"],
-  link: "/projects/6"
-}];
+ }, 
+ //{
+//   id: 3,
+//   title: "Mobile Banking App",
+//   description: "A user-friendly mobile banking application with advanced security features and intuitive UX. Designed in Figma and developed for iOS and Android.",
+//   imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+//   category: ["UI/UX", "Mobile"],
+//   link: "/projects/3",
+//   featured: true
+// }, {
+//   id: 4,
+//   title: "Health & Fitness Dashboard",
+//   description: "A comprehensive dashboard for tracking fitness goals, nutrition, and overall health metrics with data visualization.",
+//   imageUrl: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+//   category: ["Web App", "Dashboard"],
+//   link: "/projects/4"
+// }, {
+//   id: 5,
+//   title: "Creative Agency Portfolio",
+//   description: "A vibrant and interactive portfolio website for a creative agency, featuring case studies and team profiles.",
+//   imageUrl: "https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+//   category: ["Web Design", "Portfolio"],
+//   link: "/projects/5"
+// }, {
+//   id: 6,
+//   title: "Real Estate Listing Platform",
+//   description: "A property listing website with advanced search features, virtual tours, and agent profiles for a premium real estate company.",
+//   imageUrl: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+//   category: ["Web App", "Real Estate"],
+//   link: "/projects/6"
+// }
+];
 const ProjectsPage = () => {
   const categories = ["All", "Web Design", "Frontend", "Web App", "E-commerce", "UI/UX", "Mobile", "Dashboard", "Portfolio", "Real Estate"];
   const [activeCategory, setActiveCategory] = useState("All");

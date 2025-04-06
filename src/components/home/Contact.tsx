@@ -91,15 +91,15 @@ const Contact = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Mail className="mr-3" size={18} />
-                  <span>hello@portfolio.com</span>
+                  <span>codenawaraj@gmail.com</span>
                 </div>
                 <div className="flex items-center">
                   <Phone className="mr-3" size={18} />
-                  <span>+1 (555) 123-4567</span>
+                  <span>+919818540415</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="mr-3" size={18} />
-                  <span>San Francisco, CA</span>
+                  <span>Gurugram, India</span>
                 </div>
               </div>
             </div>

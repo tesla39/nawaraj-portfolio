@@ -8,30 +8,12 @@ import { Button } from '@/components/ui/button';
 
 const AboutPage = () => {
   const skills = [
-    { category: "Design", items: ["UI/UX Design", "Web Design", "Prototyping", "Wireframing", "Brand Identity"] },
-    { category: "Development", items: ["HTML/CSS", "JavaScript", "React", "TypeScript", "Tailwind CSS"] },
-    { category: "Tools", items: ["Figma", "Adobe XD", "VS Code", "Git", "Jira"] }
-  ];
-
-  const experiences = [
-    {
-      position: "Senior Frontend Developer",
-      company: "Tech Innovations Inc.",
-      period: "2021 - Present",
-      description: "Lead frontend development for various client projects, implementing responsive designs and optimizing performance."
-    },
-    {
-      position: "UI/UX Designer",
-      company: "Creative Solutions",
-      period: "2018 - 2021",
-      description: "Designed user interfaces for web and mobile applications, conducted user research and testing."
-    },
-    {
-      position: "Web Developer",
-      company: "Digital Agency",
-      period: "2016 - 2018",
-      description: "Developed and maintained client websites using modern technologies and best practices."
-    }
+    { category: "Development", items: ["Python", "JavaScript", "TypeScript", "Node.js", "React", "Next.js"] },
+    { category: "Backend & Databases", items: ["PostgreSQL", "MongoDB", "REST APIs", "GraphQL", "gRPC", "Redis"] },
+    { category: "Tools & DevOps", items: ["Docker", "Git", "VS Code", "GitHub", "Linux", "CI/CD"] },
+    { category: "Architecture", items: ["OOP", "Design Patterns", "Microservices", "System Design"] },
+    { category: "Extras", items: ["AI Toolkits", "Testing", "WebSockets", "Performance Optimization"] }
+    
   ];
 
   return (
@@ -56,16 +38,14 @@ const AboutPage = () => {
                 <h2 className="section-title">My Story</h2>
                 <div className="space-y-4 text-lg">
                   <p>
-                    I'm a designer and developer with over 5 years of experience creating digital 
-                    solutions for clients across various industries. My journey began with a 
-                    passion for visual design, which eventually led me to explore the 
-                    technical aspects of bringing those designs to life.
+                  I'm a tech enthusiast driven by a belief that technology should empower people, not control them. 
+                  My journey began with a curiosity about how systems work, which soon expanded into a deep interest in logic,
+                   mathematics, and the innovation behind every piece of software.
                   </p>
                   <p>
-                    What sets me apart is my dual expertise in both design and development, 
-                    allowing me to bridge the gap between aesthetics and functionality. I believe 
-                    that great digital products are born from a deep understanding of user needs 
-                    combined with technical excellence.
+                  What sets me apart is my focus on purpose-driven development—creating tools and systems that preserve creativity, spark ideas,
+                   and respect human thought in an age of automation.
+                   I believe great technology isn't just functional or efficient; it's ethical, thoughtful, and built to serve people first.
                   </p>
                   <p>
                     When I'm not designing or coding, you can find me exploring new technologies, 
@@ -87,7 +67,7 @@ const AboutPage = () => {
                 />
                 <div className="absolute -bottom-6 -left-6 p-6 bg-white rounded-lg shadow-xl max-w-xs">
                   <blockquote className="text-lg italic">
-                    "Design is not just what it looks like and feels like. Design is how it works."
+                    "Code isn’t just what you write. It’s how the whole system works together."
                   </blockquote>
                   <p className="mt-2 font-medium text-right">— Steve Jobs</p>
                 </div>
@@ -111,27 +91,6 @@ const AboutPage = () => {
                       </li>
                     ))}
                   </ul>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16">
-          <div className="container mx-auto px-4 md:px-6">
-            <h2 className="section-title mb-12 text-center">Work Experience</h2>
-            <div className="max-w-3xl mx-auto space-y-8">
-              {experiences.map((exp, index) => (
-                <div key={index} className="relative pl-8 border-l-2 border-muted-foreground/30">
-                  <div className="absolute -left-[9px] top-0 w-4 h-4 bg-primary rounded-full"></div>
-                  <div className="bg-white p-6 rounded-xl shadow-sm">
-                    <h3 className="text-xl font-bold text-portfolio-navy">{exp.position}</h3>
-                    <div className="flex items-center justify-between mb-4">
-                      <p className="text-primary font-medium">{exp.company}</p>
-                      <p className="text-sm text-muted-foreground">{exp.period}</p>
-                    </div>
-                    <p>{exp.description}</p>
-                  </div>
                 </div>
               ))}
             </div>

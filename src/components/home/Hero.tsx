@@ -17,10 +17,10 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 max-w-xl">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold leading-tight animate-fade-in">
-              Creating <span className="text-[#64ffda]">Beautiful</span> Digital Experiences
+            Turning Ideas <span className="text-[#64ffda]">Into Tools </span> for a Better World
             </h1>
             <p className="text-xl text-muted-foreground animate-fade-in animation-delay-200">
-              I design and develop stunning websites and applications that deliver exceptional user experiences.
+            I develop digital tools that are easy to use and solves real problems.
             </p>
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-400">
               <Button asChild size="lg" className="bg-transparent hover:bg-[#64ffda]/10 text-[#64ffda] border border-[#64ffda] hover:border-[#64ffda] btn-hover">

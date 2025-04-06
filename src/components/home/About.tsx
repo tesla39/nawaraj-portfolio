@@ -5,8 +5,8 @@ import { Button } from '@/components/ui/button';
 
 const About = () => {
   const skills = [
-    "Web Design", "Frontend Development", "UI/UX Design", 
-    "React.js", "Tailwind CSS", "TypeScript"
+    "Web Development", "System Design", "Innovation", 
+    "Problem solving", "Backend & Database", "Architecture"
   ];
 
   return (
@@ -16,30 +16,28 @@ const About = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden aspect-video lg:aspect-square">
               <img 
-                src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=1000&q=80"
                 alt="Portrait" 
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-portfolio-navy/50 to-transparent"></div>
             </div>
-            <div className="absolute -bottom-4 -right-4 bg-white p-6 rounded-lg shadow-xl max-w-xs">
+            {/* <div className="absolute -bottom-4 -right-4 bg-white p-6 rounded-lg shadow-xl max-w-xs">
               <p className="text-lg font-medium">
                 <span className="text-accent">5+ years</span> of experience in creating digital solutions
               </p>
-            </div>
+            </div> */}
           </div>
           
           <div className="space-y-6">
             <h2 className="section-title">About Me</h2>
             <p className="text-lg text-muted-foreground">
-              I'm a passionate designer and developer dedicated to creating beautiful, 
-              functional digital experiences. With a strong background in both design 
-              and development, I bring a unique perspective to every project.
+            I'm a tech enthusiast driven by a belief that technology should empower people, not control them. 
+                 
             </p>
             <p className="text-lg text-muted-foreground">
-              My approach combines aesthetic sensibility with technical expertise 
-              to build solutions that not only look great but also deliver exceptional 
-              user experiences.
+            My journey began with a curiosity about how systems work, which soon expanded into a deep interest in logic,
+            mathematics, and the innovation behind every piece of software.
             </p>
             
             <div className="flex flex-wrap gap-2 mt-6">

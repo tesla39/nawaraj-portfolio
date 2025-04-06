@@ -75,7 +75,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-bold text-lg">Email</h3>
-                      <p className="text-muted-foreground">hello@portfolio.com</p>
+                      <p className="text-muted-foreground">codenawaraj@gmail.com</p>
                     </div>
                   </div>
                   
@@ -85,7 +85,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-bold text-lg">Phone</h3>
-                      <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                      <p className="text-muted-foreground">+919818540415</p>
                     </div>
                   </div>
                   
@@ -95,7 +95,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-bold text-lg">Location</h3>
-                      <p className="text-muted-foreground">San Francisco, CA</p>
+                      <p className="text-muted-foreground">Gurugram, India</p>
                     </div>
                   </div>
                 </div>
@@ -103,16 +103,16 @@ const ContactPage = () => {
                 <div className="mt-8">
                   <h3 className="font-bold text-lg mb-4">Connect With Me</h3>
                   <div className="flex space-x-4">
-                    <a href="#" className="w-10 h-10 bg-portfolio-navy text-white rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                    <a href="https://github.com/tesla39/" className="w-10 h-10 bg-portfolio-navy text-white rounded-full flex items-center justify-center hover:bg-primary transition-colors">
                       <Github size={20} />
                     </a>
-                    <a href="#" className="w-10 h-10 bg-portfolio-navy text-white rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                    <a href="https://www.linkedin.com/in/nawaraj-bishwakarma-2b5644352/" className="w-10 h-10 bg-portfolio-navy text-white rounded-full flex items-center justify-center hover:bg-primary transition-colors">
                       <Linkedin size={20} />
                     </a>
-                    <a href="#" className="w-10 h-10 bg-portfolio-navy text-white rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                    <a href="https://x.com/mahesh_bk369" className="w-10 h-10 bg-portfolio-navy text-white rounded-full flex items-center justify-center hover:bg-primary transition-colors">
                       <Twitter size={20} />
                     </a>
-                    <a href="#" className="w-10 h-10 bg-portfolio-navy text-white rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                    <a href="codenawaraj@gmail.com" className="w-10 h-10 bg-portfolio-navy text-white rounded-full flex items-center justify-center hover:bg-primary transition-colors">
                       <Mail size={20} />
                     </a>
                   </div>

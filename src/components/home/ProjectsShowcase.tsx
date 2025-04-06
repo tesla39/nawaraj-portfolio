@@ -14,25 +14,12 @@ type Project = {
 };
 const projects: Project[] = [{
   id: 1,
-  title: "Digital Agency Website",
-  description: "A modern website for a digital marketing agency with interactive elements.",
+  title: "Digital Menu",
+  description: "A QR- based digital menu system to create beautiful & contactless menus with QR codes that enhance customer experience and simplify ordering at your restaurant.",
   imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
   category: ["Web Design", "Frontend"],
-  link: "/projects/1"
-}, {
-  id: 2,
-  title: "E-commerce Platform",
-  description: "A complete e-commerce solution with product management and checkout.",
-  imageUrl: "https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-  category: ["Web App", "E-commerce"],
-  link: "/projects/2"
-}, {
-  id: 3,
-  title: "Mobile Banking App",
-  description: "A user-friendly mobile banking application with advanced security features.",
-  imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-  category: ["UI/UX", "Mobile"],
-  link: "/projects/3"
+  link: "https://astramind.netlify.app/",
+  
 }];
 const ProjectsShowcase = () => {
   const categories = ["All", "Web Design", "Frontend", "Web App", "E-commerce", "UI/UX", "Mobile"];
