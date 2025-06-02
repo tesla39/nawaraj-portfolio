@@ -18,8 +18,7 @@ const projects: Project[] = [{
   description: "A QR- based digital menu system to create beautiful & contactless menus with QR codes that enhance customer experience and simplify ordering at your restaurant.",
   imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
   category: ["Web Design", "Frontend"],
-  link: "https://astramind.netlify.app/",
-  
+  link: "https://astramind.netlify.app/"
 }];
 const ProjectsShowcase = () => {
   const categories = ["All", "Web Design", "Frontend", "Web App", "E-commerce", "UI/UX", "Mobile"];
@@ -60,7 +59,7 @@ const ProjectsShowcase = () => {
                   {project.category.map((cat, index) => <Badge key={index} variant="secondary">{cat}</Badge>)}
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-portfolio-navy">{project.title}</h3>
-                <p className="text-muted-foreground">{project.description}</p>
+                <p className="text-gray-900">{project.description}</p>
               </div>
             </Link>)}
         </div>

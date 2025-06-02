@@ -63,17 +63,17 @@ const BlogSection = () => {
                 </div>
               </div>
               <div className="p-6">
-                <div className="flex items-center gap-3 text-sm text-muted-foreground mb-3">
+                <div className="flex items-center gap-3 text-sm text-muted-foreground mb-3 bg-slate-50">
                   <span>{post.author}</span>
                   <span>•</span>
                   <span>{formatDistanceToNow(post.date, {
                   addSuffix: true
                 })}</span>
                 </div>
-                <h3 className="text-xl mb-2 text-portfolio-navy group-hover:text-primary transition-colors font-bold">
+                <h3 className="text-xl mb-2 transition-colors font-bold text-gray-900">
                   {post.title}
                 </h3>
-                <p className="text-muted-foreground">{post.excerpt}</p>
+                <p className="text-gray-900">{post.excerpt}</p>
                 <div className="mt-4 inline-flex items-center text-primary font-medium">
                   Read More <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
                 </div>
