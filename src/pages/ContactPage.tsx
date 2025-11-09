@@ -87,7 +87,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-bold text-lg">Phone</h3>
-                      <p className="text-muted-foreground">+919818540415</p>
+                      <p className="text-muted-foreground">+9779804895494</p>
                     </div>
                   </div>
                   
@@ -97,7 +97,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-bold text-lg">Location</h3>
-                      <p className="text-muted-foreground">Gurugram, India</p>
+                      <p className="text-muted-foreground">Kathmandu, Nepal</p>
                     </div>
                   </div>
                 </div>
