@@ -69,7 +69,7 @@ const Contact = () => {
               <Phone size={20} />
             </div>
             <h3 className="font-bold text-lg mb-2 text-gray-950">Phone</h3>
-            <p className="text-muted-foreground">+919818540415 (WhatsApp)</p>
+            <p className="text-muted-foreground">+9779804895494 (WhatsApp)</p>
           </div>
           
           <div className="p-6 rounded-xl shadow-md flex flex-col items-center text-center bg-gray-800">
@@ -77,7 +77,7 @@ const Contact = () => {
               <MapPin size={20} />
             </div>
             <h3 className="font-bold text-lg mb-2 text-gray-950">Location</h3>
-            <p className="text-muted-foreground">Gurugram, India</p>
+            <p className="text-muted-foreground">Kathmandu, Nepal</p>
           </div>
         </div>
 
