@@ -95,11 +95,11 @@ const Contact = () => {
                 </div>
                 <div className="flex items-center">
                   <Phone className="mr-3" size={18} />
-                  <span>+919818540415</span>
+                  <span>+9779804895494</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="mr-3" size={18} />
-                  <span>Gurugram, India</span>
+                  <span>Kathmandu, Nepal</span>
                 </div>
               </div>
             </div>
