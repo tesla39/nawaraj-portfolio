@@ -12,6 +12,7 @@ export default defineConfig(({ mode }) => ({
       "c3ecaa08-a12e-4a9a-9a4c-522908732a40.lovableproject.com"
     ]
   },
+  
   plugins: [
     react(),
     mode === 'development' &&

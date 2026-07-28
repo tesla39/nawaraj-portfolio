@@ -17,28 +17,28 @@ const Footer = () => {
             </Link>
             <div className="flex space-x-4 items-center">
               <Link 
-                to="#" 
+                to="mailto:codenawaraj@gmail.com" 
                 className="text-muted-foreground hover:text-primary transition-colors hover:-translate-y-1 duration-200"
                 aria-label="Email"
               >
                 <Mail size={18} />
               </Link>
               <Link 
-                to="#" 
+                to="https://github.com/tesla39" 
                 className="text-muted-foreground hover:text-primary transition-colors hover:-translate-y-1 duration-200"
                 aria-label="GitHub"
               >
                 <Github size={18} />
               </Link>
               <Link 
-                to="#" 
+                to="https://www.linkedin.com/in/nawaraj-bishwakarma-2b5644352/" 
                 className="text-muted-foreground hover:text-primary transition-colors hover:-translate-y-1 duration-200"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={18} />
               </Link>
               <Link 
-                to="#" 
+                to="https://x.com/mahesh_bk369" 
                 className="text-muted-foreground hover:text-primary transition-colors hover:-translate-y-1 duration-200"
                 aria-label="Twitter"
               >

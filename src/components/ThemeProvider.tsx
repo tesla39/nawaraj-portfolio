@@ -8,6 +8,7 @@ type ThemeProviderProps = {
   defaultTheme?: Theme;
 };
 
+
 type ThemeProviderState = {
   theme: Theme;
   setTheme: (theme: Theme) => void;

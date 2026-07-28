@@ -22,4 +22,5 @@ export function GlobeContainer() {
       </Canvas>
     </div>
   );
+  
 }
